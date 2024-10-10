@@ -10,3 +10,5 @@ print(temperatures)
 totaltemp = 0
 for i in range (len(temperatures)):
     totaltemp += temperatures[i]
+averagetemp = totaltemp / len(temperatures)
+print(averagetemp)
