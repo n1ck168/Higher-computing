@@ -5,4 +5,4 @@ def capitalisation():
     print(first + animal[1:1000])
 
 
-capitalisation
+capitalisation()
