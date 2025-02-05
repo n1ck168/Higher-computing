@@ -38,17 +38,23 @@ def displaySightings(specifiedcountry, numSightings):
 
 
 def countyearsightings(numsightings, thisDate):
-    numsightings = []
-    countposition = []
-    for counter in range (0,len(thisDate)):
+    numSightings = []
+    count = 0
+    #countposition = []
+    for counter in range (0,len(thisDate)-1):
         currentyear = thisDate[counter][6:11]
         nextyear = thisDate[counter+1][6:11]
         if currentyear == nextyear:
-            numsightings[counter] = numsightings[counter] + 1
-    i = 0    
-    for i in range:
-        print (countposition[i], countposition[i])
-        i = i + 1     
+            count = count + 1
+        else:
+            numSightings.append(count)
+            count = 0
+    
+    print(numSightings)
+    # i = 0    
+    # for i in range:
+    #     print (countposition[i], countposition[i])
+    #     i = i + 1     
           
 
 
