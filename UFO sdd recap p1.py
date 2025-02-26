@@ -45,7 +45,7 @@ def countyearsightings(numsightings, thisDate):
         currentyear = thisDate[counter][6:11]
         nextyear = thisDate[counter+1][6:11]
         if currentyear == nextyear:
-            count = count + 1
+            count = count + 1 
         else:
             numSightings.append(count)
             count = 0
